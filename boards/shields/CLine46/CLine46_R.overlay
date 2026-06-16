@@ -72,6 +72,11 @@
         <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
         <&zip_temp_layer 3 800>;                            //オートマウスレイヤーの選択;
 
+    snipe {
+        layers = <2>;
+        input-processors = <&zip_xy_scaler 1 2>;
+        process-next;
+    };
 
     scroller {
         layers = <4>;
@@ -91,16 +96,19 @@
     #input-processor-cells = <2>;
     require-prior-idle-ms = <700>;
     excluded-positions = <
-        7 // I
-        18  // J
-        19 // K
-        20 // L
-        22 // LEFT_SHIFT
-        33 // RIGHT_SHIFT
-        34 // LEFT_CTRL
-        38 // L SPACE L2
-        39 // L SPACE L1
-        40 // R SPACE L1
-        41 // R SPACE L2
+        8   // I
+        19  // J
+        20  // K
+        21  // L
+        24  // LEFT_SHIFT
+        36  // RIGHT_SHIFT
+        45  // LEFT_CTRL
+        35  // L SPACE L2
+        43  // L SPACE L1
+        42  // R SPACE L1
+        41  // R SPACE L2
+        40  // L SPACE L3
+        39  // LEFT WIN
+        37  // RIGHT_CONTROL
     >; 
 };
