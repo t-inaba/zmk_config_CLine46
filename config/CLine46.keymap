@@ -18,7 +18,7 @@
 
         test {
             bindings = <&kp ESCAPE>;
-            key-positions = <24 36 45 35 43 42 41 40 39 37>;
+            key-positions = <8 19 20 21>;
         };
     };
 
