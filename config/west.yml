@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: cormoran
-      url-base: https://github.com/cormoran
+    #- name: cormoran
+    #  url-base: https://github.com/cormoran
     - name: badjeff    # <-- PMW3610
       url-base: https://github.com/badjeff
     - name: caksoylar  # <-- RGB LED
@@ -11,32 +11,46 @@ manifest:
 
   projects:
     # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork
-    - name: zmk
-      remote: cormoran
-      revision: v0.3-branch+dya
-      import: app/west.yml
+    #- name: zmk
+    #  remote: cormoran
+    #  revision: v0.3-branch+dya
+    #  import: app/west.yml
     - name: zmk-feature-non-lipo-battery-management
       remote: takamaru-fpv
       revision: voltage_division
 
-    # DYA Studio モジュール（すべて cormoran リポジトリ）
-    - name: zmk-module-ble-management
-      remote: cormoran
-      revision: main
-    - name: zmk-module-battery-history
-      remote: cormoran
-      revision: main
-    - name: zmk-module-settings-rpc
-      remote: cormoran
-      revision: main
-    - name: zmk-module-runtime-input-processor
-      remote: cormoran
-      revision: main
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3.0
+      import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: zmk-0.3
+      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: v0.3-branch
+      revision: v0.3
+    #- name: zmk-feature-non-lipo-battery-management
+    #  remote: sekigon-gonnoc
+    #  revision: main
+
+    # DYA Studio モジュール（すべて cormoran リポジトリ）
+    #- name: zmk-module-ble-management
+    #  remote: cormoran
+    #  revision: main
+    #- name: zmk-module-battery-history
+    #  remote: cormoran
+    #  revision: main
+    #- name: zmk-module-settings-rpc
+    #  remote: cormoran
+    #  revision: main
+    #- name: zmk-module-runtime-input-processor
+    #  remote: cormoran
+    #  revision: main
+    #- name: zmk-pmw3610-driver
+    #  remote: badjeff
+    #  revision: zmk-0.3
+    #- name: zmk-rgbled-widget
+    #  remote: caksoylar
+    #  revision: v0.3-branch
   self:
     path: config
