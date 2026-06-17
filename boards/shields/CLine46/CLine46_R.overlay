@@ -70,7 +70,7 @@
         //<&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;         //Y軸反転
         //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
         <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-        <&zip_temp_layer 3 800>;                            //オートマウスレイヤーの選択;
+        <&zip_temp_layer 3 900>;                            //オートマウスレイヤーの選択;
 
     snipe {
         layers = <2>;
@@ -101,14 +101,14 @@
         20  // K
         21  // L
         24  // LEFT_SHIFT
-        36  // RIGHT_SHIFT
-        45  // LEFT_CTRL
-        35  // L SPACE L2
-        43  // L SPACE L1
+        35  // RIGHT_SHIFT
+        36  // LEFT_CONTROL
+        37  // LEFT_WIN
+        39  // L SPACE L3
+        40  // L SPACE L2
+        41  // L SPACE L1
         42  // R SPACE L1
-        41  // R SPACE L2
-        40  // L SPACE L3
-        39  // LEFT WIN
-        37  // RIGHT_CONTROL
+        43  // R SPACE L2
+        45  // RIGHT_CONTROL
     >; 
 };
