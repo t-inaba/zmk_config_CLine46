@@ -60,9 +60,9 @@
 
         FN_NAV {
             bindings = <
-&studio_unlock  &kp F1  &kp F2           &kp F3  &kp F4   &kp F5                     &kp INS        &kp PG_UP  &kp UP    &kp PAGE_DOWN  &none    &kp DELETE
-&trans          &kp F6  &kp F7           &kp F8  &kp F9   &kp F10                    &kp HOME       &kp LEFT   &kp DOWN  &kp RIGHT      &kp END  &trans
-&trans          &none   &none            &none   &kp F11  &kp F12                    &kp SEMICOLON  &kp COLON  &trans    &trans         &trans   &trans
+&studio_unlock  &kp F1  &kp F2           &kp F3  &kp F4   &kp F5                     &kp INS        &kp PG_UP     &kp UP    &kp PAGE_DOWN  &none    &kp DELETE
+&trans          &kp F6  &kp F7           &kp F8  &kp F9   &kp F10                    &kp HOME       &kp LEFT      &kp DOWN  &kp RIGHT      &kp END  &trans
+&trans          &none   &none            &none   &kp F11  &kp F12                    &kp JP_SEMI    &kp JP_COLON  &trans    &trans         &trans   &trans
                 &trans  &kp PRINTSCREEN  &trans  &trans   &trans   &trans    &trans  &trans                              &trans         &trans
             >;
         };
