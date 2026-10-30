@@ -21,6 +21,10 @@
             bindings = <&mo 4>;
             key-positions = <41 40>;
         };
+        COMBO_ZENHAN {
+            bindings = <&kp JP_ZKHK>;
+            key-positions = <25 26>;
+        };
     };
 
     macros {
